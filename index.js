@@ -16,6 +16,10 @@ class Execute {
     getAge() {
         return this.age;
     }
+
+    phraseGenerator() {
+        return `Hello, my name is ${this.name} ${this.lastname} and I am ${this.age} years old`;
+    }
 }
 
 const execute = new Execute("John", "Doe")
