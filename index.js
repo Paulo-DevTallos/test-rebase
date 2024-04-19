@@ -1,14 +1,16 @@
 class Execute {
-    constructor() {
-        this.init();
+    name = ""
+    lastname = ""
+    
+    constructor(name, lastname) {
+        this.name = name;
+        this.lastname = lastname;
     }
 
-    init() {
-        console.log('Execute');
+    mountFullName() {
+        return `${this.name} ${this.lastname}`
     }
 }
 
-
-
-const executeClass = new Execute()
-executeClass.init(); 
+const execute = new Execute("John", "Doe")
+console.log(execute.mountFullName());
