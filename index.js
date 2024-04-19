@@ -28,6 +28,10 @@ class Execute {
     joinPhraseAndCalculateBorrnYear() {
         return `${this.phraseGenerator()} and I was born in ${this.calculateBorrnYear()}`
     }
+    
+    executePhrase() {
+        console.log(this.phraseGenerator());
+    }
 }
 
 const execute = new Execute("John", "Doe")
