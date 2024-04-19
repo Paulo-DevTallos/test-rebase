@@ -24,6 +24,10 @@ class Execute {
     phraseGenerator() {
         return `Hello, my name is ${this.name} ${this.lastname} and I am ${this.age} years old`;
     }
+
+    joinPhraseAndCalculateBorrnYear() {
+        return `${this.phraseGenerator()} and I was born in ${this.calculateBorrnYear()}`
+    }
 }
 
 const execute = new Execute("John", "Doe")
