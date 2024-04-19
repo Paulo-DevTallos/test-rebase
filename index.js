@@ -13,6 +13,10 @@ class Execute {
         return `${this.name} ${this.lastname}`
     }
 
+    calculateBorrnYear() {
+        return new Date().getFullYear() - this.age;
+    }
+
     getAge() {
         return this.age;
     }
